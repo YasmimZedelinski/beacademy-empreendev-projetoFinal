@@ -1,21 +1,21 @@
 <template>
   <div :id="name" class="card">
-    <img class="pokephoto" :src="image" />
-    <span class="pokename">
+    <img class="pokephoto" :src="image" alt="Imagem do Pokémon em questão"/>
+    <h2 class="pokename">
       {{ this.name }}
-    </span>
-    <div class="poketype">
-      <span class="poketype-name" v-for="type in types" :key="type">
-        <img class="poketype-icon" :src="'/img/types/' + type.type.name + '.png'" />
+    </h2>
+    <ul class="poketype">
+      <li class="poketype-name" v-for="type in types" :key="type">
+        <img class="poketype-icon" :src="'/img/types/' + type.type.name + '.png'" alt="Ícone do tipo do Pokémon"/>
         {{ type.type.name }}
-      </span>
-    </div>
-    <div class="pokeabilities">
+      </li>
+    </ul>
+    <ul class="pokeabilities">
       <p class="title-abilities">Habilidades:</p>
-      <span class="abilitie-name" v-for="abilitie in abilities" :key="abilitie">
+      <li class="abilitie-name" v-for="abilitie in abilities" :key="abilitie">
         {{ abilitie.ability.name }}
-      </span>
-    </div>
+      </li>
+    </ul>
   </div>
 </template>
 

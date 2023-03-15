@@ -1,5 +1,5 @@
 <template>
-  <input placeholder="Nome do Pókemon" @input="sendUserInput($event)" />
+  <input placeholder="Nome do Pokémon" @input="sendUserInput($event)" />
 </template>
 
 <script>

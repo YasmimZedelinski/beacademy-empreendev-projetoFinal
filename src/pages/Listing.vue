@@ -2,8 +2,8 @@
   <div class="listing-container">
     <SearchBar @userInput="filterUserInput" />
     <div class="not-found" v-if="notFound">
-      <p>Não encontrado!</p>
-      <img src="/img/pikachuSurprise.png" />
+      <h2>Não encontrado!</h2>
+      <img src="/img/pikachuSurprise.png" alt="Imagem do Pokémon Pikachu, surpreso"/>
     </div>
     <div v-else class="cards-grid">
       <Card

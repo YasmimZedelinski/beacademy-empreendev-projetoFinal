@@ -1,0 +1,6 @@
+@import './base/reset.css';
+@import './base/colors.css';
+
+/* --------------- LAYOUT -------------- */
+
+@import './layout/page/index.css';
